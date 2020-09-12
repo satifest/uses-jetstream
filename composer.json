@@ -1,0 +1,46 @@
+{
+    "name": "satifest/uses-jetstream",
+    "description": "Uses Laravel Jetstream with Satifest",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Mior Muhammad Zaki",
+            "email": "crynobone@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Satifest\\Jetstream\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Satifest\\Jetstream\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "laravel/jetstream": "^1.0",
+        "illuminate/view": "^8.0"
+    },
+    "require-dev": {
+        "satifest/foundation": "^1.0",
+        "orchestra/canvas": "^6.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Satifest\\Jetstream\\JetstreamServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

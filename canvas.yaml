@@ -1,0 +1,27 @@
+preset: package
+
+namespace: Satifest\Jetstream
+user-auth-provider: App\User
+
+paths:
+  src: src
+  resource: resources
+
+factory:
+  path: database/factories
+
+migration:
+  path: database/migrations
+  prefix: ''
+
+console:
+  namespace: Satifest\Jetstream\Console
+
+model:
+  namespace: Satifest\Jetstream
+
+provider:
+  namespace: Satifest\Jetstream
+
+testing:
+  namespace: Satifest\Jetstream\Tests
