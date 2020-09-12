@@ -24,13 +24,13 @@ class JetstreamServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerResources();
+        $this->registerLivewireResources();
     }
 
     /**
      * Register the package resources such as routes, templates, etc.
      */
-    protected function registerResources(): void
+    protected function registerLivewireResources(): void
     {
         $this->bootBladeComponents();
         $this->bootLivewireComponents();
