@@ -1,5 +1,5 @@
-<div>
-  <h5 class="mt-8 text-2xl">Installing Packages Via Composer</h5>
+<div class="p-6">
+  <h5 class="mt-2 text-2xl">Installing Packages Via Composer</h5>
   <p class="mt-6 text-gray-500">You may subscribed packages via our private Satis repository. To get started, add the repository to your application's <code>composer.json</code> file:</p>
   @livewire('satifest-guide-for-composer-repository')
 
