@@ -15,7 +15,7 @@
   <script src="{{ mix('js/common.js', 'vendor/satifest') }}"></script>
   <script>
     document.addEventListener("livewire:load", function(event) {
-      window.livewire.hook('element.updated', () => {
+      window.livewire.hook('message.processed', () => {
         document.querySelectorAll('pre code').forEach((block) => {
           hljs.highlightBlock(block);
         });
