@@ -35,7 +35,7 @@ class JetstreamServiceProvider extends ServiceProvider
         $this->bootBladeComponents();
         $this->bootLivewireComponents();
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'satifest');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'satifest-jetstream');
     }
 
 
