@@ -24,13 +24,17 @@ class JetstreamServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerLivewireResources();
+        $stack = \config('jetstream.stack');
+
+        if ($stack === 'livewire') {
+            $this->registerLivewireStackResources();
+        }
     }
 
     /**
      * Register the package resources such as routes, templates, etc.
      */
-    protected function registerLivewireResources(): void
+    protected function registerLivewireStackResources(): void
     {
         $this->bootBladeComponents();
         $this->bootLivewireComponents();
